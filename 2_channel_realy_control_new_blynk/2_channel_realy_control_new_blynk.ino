@@ -1,3 +1,5 @@
+#define BLYNK_TEMPLATE_ID "TMPL33jFR8aR2"
+#define BLYNK_TEMPLATE_NAME "Home Automation"
 /*New Blynk app with Home Automation
    https://srituhobby.com
 */
@@ -11,7 +13,7 @@
 #define relay1 D0
 #define relay2 D1
 
-#define BLYNK_AUTH_TOKEN "" //Enter your blynk auth token
+#define BLYNK_AUTH_TOKEN "XiD4FGlMfUe7eG4-NhCioN5riGuG-a8Q" //Enter your blynk auth token
 
 
 char auth[] = BLYNK_AUTH_TOKEN;
