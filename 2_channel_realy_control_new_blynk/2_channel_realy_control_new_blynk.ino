@@ -19,8 +19,8 @@
 
 
 char auth[] = BLYNK_AUTH_TOKEN;
-char ssid[] = "Shourya's Galaxy";//Enter your WIFI name
-char pass[] = "slbc4740";//Enter your WIFI password
+char ssid[] = "";//Enter your WIFI name
+char pass[] = "";//Enter your WIFI password
 
 //Get the button values
 BLYNK_WRITE(V0) {
