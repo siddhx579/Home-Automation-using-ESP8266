@@ -1,8 +1,5 @@
 #define BLYNK_TEMPLATE_ID "TMPL33jFR8aR2"
 #define BLYNK_TEMPLATE_NAME "Home Automation"
-/*New Blynk app with Home Automation
-   https://srituhobby.com
-*/
 
 //Include the library files
 #define BLYNK_PRINT Serial
