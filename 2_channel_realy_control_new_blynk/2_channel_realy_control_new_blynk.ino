@@ -68,10 +68,14 @@ void setup() {
   //Set the relay pins as output pins
   pinMode(relay1, OUTPUT);
   pinMode(relay2, OUTPUT);
+  pinMode(relay3, OUTPUT);
+  pinMode(relay4, OUTPUT);
 
   // Turn OFF the relay
   digitalWrite(relay1, HIGH);
   digitalWrite(relay2, HIGH);
+  digitalWrite(relay3, HIGH);
+  digitalWrite(relay4, HIGH);
 
   //Initialize the Blynk library
   Blynk.begin(auth, ssid, pass, "blynk.cloud", 80);
