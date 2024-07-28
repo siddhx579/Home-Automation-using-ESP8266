@@ -12,13 +12,15 @@
 //Define the relay pins
 #define relay1 D0
 #define relay2 D1
+#define relay3 D2
+#define relay4 D3
 
 #define BLYNK_AUTH_TOKEN "XiD4FGlMfUe7eG4-NhCioN5riGuG-a8Q" //Enter your blynk auth token
 
 
 char auth[] = BLYNK_AUTH_TOKEN;
-char ssid[] = "Siddhant_2.4";//Enter your WIFI name
-char pass[] = "9810224900";//Enter your WIFI password
+char ssid[] = "Shourya's Galaxy";//Enter your WIFI name
+char pass[] = "slbc4740";//Enter your WIFI password
 
 //Get the button values
 BLYNK_WRITE(V0) {
@@ -42,6 +44,26 @@ BLYNK_WRITE(V1) {
   }
 }
 
+BLYNK_WRITE(V2) {
+  bool value1 = param.asInt();
+  // Check these values and turn the relay1 ON and OFF
+  if (value1 == 1) {
+    digitalWrite(relay3, LOW);
+  } else {
+    digitalWrite(relay3, HIGH);
+  }
+}
+
+BLYNK_WRITE(V3) {
+  bool value1 = param.asInt();
+  // Check these values and turn the relay1 ON and OFF
+  if (value1 == 1) {
+    digitalWrite(relay4, LOW);
+  } else {
+    digitalWrite(relay4, HIGH);
+  }
+}
+
 void setup() {
   //Set the relay pins as output pins
   pinMode(relay1, OUTPUT);
@@ -53,6 +75,7 @@ void setup() {
 
   //Initialize the Blynk library
   Blynk.begin(auth, ssid, pass, "blynk.cloud", 80);
+
 }
 
 void loop() {
