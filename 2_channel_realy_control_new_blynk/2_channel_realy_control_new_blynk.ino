@@ -15,7 +15,7 @@
 #define relay3 D2
 #define relay4 D3
 
-#define BLYNK_AUTH_TOKEN "XiD4FGlMfUe7eG4-NhCioN5riGuG-a8Q" //Enter your blynk auth token
+#define BLYNK_AUTH_TOKEN "" //Enter your blynk auth token
 
 
 char auth[] = BLYNK_AUTH_TOKEN;
